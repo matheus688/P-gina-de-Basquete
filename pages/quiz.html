@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<style type="text/css">
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    padding: 2rem;
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+header h1,header p{
+    color: white;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h2 {
+    color: #331F19;
+    font-size: 1.2rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    accent-color: #e51e2a;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="email"]{
+    width: 100%;
+    padding: 0.6rem;
+    border: 2px solid #e51e2a;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+input::placeholder {
+    color: #e51e2a;
+}
+
+select {
+    cursor: pointer;
+    background-color: #e51e2a;
+    color: #331F19;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+img {
+    width: 10rem;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #e51e2a;
+    color: #331F19;
+    padding: 1rem;
+}
+
+td {
+    color: #331F19;
+    padding: 1rem;
+    text-align: center;
+}
+
+tfoot td {
+    background-color: #331F19;
+    color: #F4F0EA;
+}
+
+details {
+    background-color: #e51e2a;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+summary {
+    color: #331F19;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+ol {
+    margin-left: 1.5rem;
+}
+
+ol li {
+    padding: 0.2rem;
+}
+
+fieldset {
+    border: 2px solid #e51e2a;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+legend {
+    color: #331F19;
+    padding: 0 0.5rem;
+}
+
+textarea {
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #e51e2a;
+    background-color: transparent;
+}
+
+button {
+    background-color: #e51e2a;
+    border: none;
+    padding: 0.8rem;
+    color: #331F19;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#msg-final{
+    background-color: #e51e2a;
+}
+
+footer {
+    background-color: #331F19;
+    padding: 2rem;
+    text-align: center;
+}
+
+.paragrafo-footer {
+    color: #F4F0EA
+}
+
+th, select, summary, li{
+   color: white; 
+}
+
+#meu-form button{
+    color: white; 
+    width: 100%;
+}
+
+#meu-form button:hover{
+    background-color: white;
+    color: #e51e2a;
+    border:  1px solid #e51e2a;
+}
+
+#meu-form textarea{
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #e51e2a;
+}
+
+#footer-geeks{
+    background-color: #e51e2a;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+     
+
+</style>
+
+<html>
+   <head>
+      <title>Quiz sobre Basquete</title>
+      <meta name="description" content="Quiz interativo para testar seus conhecimentos sobre basquete">
+   </head>
+   <body>
+       <header>
+          ,<h1>Quiz interativo sobre Basquete</h1>
+          <p>Teste seus conhecimentos em basquete e veja quantos pontos você consegue fazer!</p>
+       </header>
+       <main>
+           <!--Introdução-->
+           <section>
+               <h2>Sobre esse Quiz</h2>
+               <p><strong>Este quiz</strong> foi desenvolvido para testar seus conhecimentos no basquete.</p>
+               <p>Você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, texto e perguntas de data. <br>Desafie-se com este quiz!</p>
+               <p>Você poderá encontrar algumas perguntas nos  níveis fácil e médias.</p>
+           </section>
+           <!--Pergunta 1: múltipla escolha-->
+           <section>
+               <h2>Pergunta 1: Quem inventou o basquete?</h2>
+               <form>
+                   <input type="radio" value="Pelé" id="p1a" name="pergunta1">
+                   <label for="p1a">Pelé</label><br>
+                   <input type="radio" value="Lebron James" id="p1b" name="pergunta1">
+                   <label for="p1b">Lebron James</label><br>
+                   <input type="radio" value="James Naismith" id="p1c" name="pergunta1">
+                   <label for="p1c">James Naismith</label><br>
+                   <input type="radio" value="Bolsonaro" id="p1d" name="pergunta1">
+                   <label for="p1d">Bolsonaro</label><br>
+               </form>
+           </section>
+           <!--Pergunta 2: texto-->
+           <section>
+                <h2>Pergunta 2: Qual jogador fez história no Basquete usando a camisa 23, jogando pelo Chicago Bulls?</h2>
+                <form>
+                    <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta...">
+                </form>
+           </section>
+           <!--Pergunta 3: texto-->
+           <section>
+                 <h2>Pergunta 3: Quais são os 3 principais fundamentos do Basquete?</h2>
+                 <form> 
+                    <input type="text" id="p3" name="pergunta3" placeholder="Digite sua resposta...">
+                 </form>
+           </section>
+           <!--Pergunta 4: data-->
+           <section> 
+                <h2>Pergunta 4: Em que ano o basquete foi inventado?</h2>
+                <form> 
+                    <input type="radio" value="1847" id="p1a" name="pergunta1">
+                    <label for="p1a">1847</label><br>
+                    <input type="radio" value="1891" id="p1b" name="pergunta1">
+                    <label for="p1b">1891</label><br>
+                    <input type="radio" value="1950" id="p1c" name="pergunta1">
+                    <label for="p1c">1950</label><br>
+                    <input type="radio" value="1935" id="p1d" name="pergunta1">
+                    <label for="p1d">1935</label><br>
+                </form>
+           </section>
+           <!--Pergunta 5: seleção múltipla-->
+           <section> 
+               <h2>Pergunta 5: Qual os dois maiores jogadores de basquete da história?</h2>
+               <form> 
+                   <input type="checkbox" id="p5a" name="pergunta5" value="Lebron James">
+                   <label for="p5a">Lebron James</label><br>
+                   <input type="checkbox" id="p5b" name="pergunta5" value="Michael Jordan ">
+                   <label for="p5b">Michael Jordan</label><br>
+                   <input type="checkbox" id="p5C" name="pergunta5" value="Shaquille O'Neal">
+                   <label for="p5C">Shaquille O'Neal</label><br>
+                   <input type="checkbox" id="p5d" name="pergunta5" value="Kobe Bryant">
+                   <label for="p5d">Kobe Bryant</label>
+               </form>
+           </section>
+           <!--Pergunta 6: upload de arquivo-->
+           <section> 
+               <h2>Pergunta 6: Faça o upload de uma imagem do símbolo de algum time da NBA:</h2>
+               <form> 
+                   <input type="file" id="p6" name="pergunta6" value="">
+               </form>
+           </section>
+           <!--Pergunta 7: menu suspenso -->
+           <section> 
+               <h2>Pergunta 7: Selecione a sua lenda preferida da história do basquete</h2>
+               <form> 
+                  <select name="pergunta7" id="p7"> 
+                    <option value="id">Kobe Bryant</option>
+                    <option value="type">Michael Jordan</option>
+                    <option value="placeholder">Lebron James</option>
+                    <option value="placeholder">Stephen Curry</option>
+                    <option value="type">Klay Thompson</option>
+                    <option value="type">Magic Johnson</option>
+                    <option value="type">Bill Russel</option>
+                    <option value="type">Kevin Durant</option>
+                    <option value="type">Jayson Tatum</option>
+                    <option value="type">Russel Westbrook</option>
+                    <option value="type">Luka Doncic</option>
+                    <option value="type">Nikola Jokic</option>
+                  </select>
+               </form>
+           </section>
+           <!--Pergunta 8: imagem-->
+           <section>  
+               <h2>Pergunta 8: Qual o nome do time representado na imagem abaixo?</h2>
+               <img src="../assets/imagemprojeto.png" alt="Logotipo de uma imagem"><br>
+               <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">
+           </section>
+           <!--Tabela de Pontuação-->
+           <section> 
+               <h2>Tabela de Pontuação</h2>
+               <table border="1">
+                 <thead> 
+                   <tr> 
+                      <th>Pontuação</th>
+                      <th>Avaliação</th>
+                   </tr>
+                 </thead> 
+                 <tbody> 
+
+                   <tr> 
+                    <td>0-2</td>
+                    <td>Não Desista! Cada tentativa é uma oportunidade de você aprender</td>
+                   </tr>
+                   <tr> 
+                    <td>3-4</td>
+                    <td>Você ainda precisa melhorar, que tal estudar mais sobre basquete?</td>
+                   </tr>
+                   <tr> 
+                    <td>5-7</td>
+                    <td>Bom! Seu conhecimento sobre basquete está satisfatório</td>
+                   </tr>
+                   <tr> 
+                    <td>8</td>
+                    <td>Perfeito! Você está muito bem informado sobre basquete</td>
+                   </tr>
+                  </tbody>
+                  <tfoot> 
+                     <tr> 
+                        <td id="msg-final" colspan="2">Boa sorte na Próxima!</td>
+                     </tr>
+                  </tfoot>
+               </table>
+           </section>
+           <!--Lista de Respostas-->
+           <section> 
+                 <h2>Verifique as Respostas Corretas</h2>
+                 <details> 
+                    <summary>Clique aqui para ver as respostas do quiz</summary>
+                    <ol> 
+                        <li>James Naismith</li>
+                        <li>Michael Jordan</li>
+                        <li>Drible, Arremesso, Passe</li>
+                        <li>1891</li>
+                        <li>Michael Jordan e Kobe Bryant</li>
+                        <li>Arquivo com alguma extensão .HTML</li>
+                        <li>Sua Opinião</li>
+                        <li>Oklahoma City Thunders</li>
+                    </ol>
+                 </details>
+              
+         
+           </section>
+           <!--Formulário de feedback-->
+           <section> 
+                 <h2>Nos dê o seu feedback</h2>
+                 <form id="meu-form">
+                    <fieldset>
+                        <legend>Informações de contato</legend>
+                     <label for="nome">Nome:</label>
+                     <input type="text" id="nome" name="nome"><br>
+                     <label for="email">Email:</label>
+                     <input type="email" id="email" name="email"><br>
+                     <label for="comentários">Comentários:</label><br>
+                     <textarea name="comentários" id="comentários" rows="4" cols="50" placeholder="Digite seus comentários aqui..."></textarea><br>
+                     <button onclick="alert ( 'FEEDBACK ENVIADO')">Envie o feedback</button>
+                    </fieldset>
+                 </form>
+           </section>
+       </main>
+       <footer id="footer-geeks">
+            <img src="./assets/logo-geeks.png" alt="">
+       </footer>
+   </body>
+</html>
